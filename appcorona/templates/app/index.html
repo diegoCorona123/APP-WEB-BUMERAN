@@ -1,0 +1,591 @@
+{% extends "app/base.html" %}
+{% load static %}
+{% block contenido %}
+
+
+
+<div class="col-lg-3 d-none d-lg-block order-2 order-lg-3">
+    <div class="buy-tickets">
+        
+        <div class="buscador">
+            <h2>
+              Busqueda
+            </h2>
+                <from action ="/buscar/" method="get">
+                    <div class="buscador">
+                        <label for="name"> Buscar <span>*</span></label>
+                        <input type="text" name="busqueda" id="busqueda" value="" size="18">
+                        <p><input type="Submit" values="Submit Form"></p>
+                     </div>
+                </from>
+        </div>
+           
+            
+    </div><!-- .buy-tickets -->
+</div><!-- .col -->
+</div><!-- .row -->
+</div><!-- .container-fluid -->
+</div><!-- .header-bar -->
+
+<div class="swiper-container hero-slider">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide" data-date="2018/05/01" style="background: url({% static 'images/fondo1.jpg' %}) no-repeat " no-repeat>
+            <div class="hero-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col flex flex-column justify-content-center">
+                            <div class="entry-header">
+                                <div class="countdown flex align-items-center">
+                                    <div class="countdown-holder flex align-items-baseline">
+                                        <span class="dday"></span>
+                                        <label>DÍAS</label>
+                                    </div><!-- .countdown-holder -->
+
+                                    <div class="countdown-holder flex align-items-baseline">
+                                        <span class="dhour"></span>
+                                        <label>HORAS</label>
+                                    </div><!-- .countdown-holder -->
+
+                                    <div class="countdown-holder flex align-items-baseline">
+                                        <span class="dmin"></span>
+                                        <label>MINUTOS</label>
+                                    </div><!-- .countdown-holder -->
+
+                                    <div class="countdown-holder flex align-items-baseline">
+                                        <span class="dsec"></span>
+                                        <label>SEGUNDOS</label>
+                                    </div><!-- .countdown-holder -->
+                                </div><!-- .countdown -->
+
+                                <h2 class="entry-title">Busca el tabajo adecuando. <br>PERSIGUE TUS SUEÑOS!</h2>
+                            </div>
+                            <!--- .entry-header -->
+
+                            <div class="entry-footer">
+                                <a class="btn gradient-bg" href="#">BUSCAS TRABAJO</a>
+                            </div><!-- .entry-footer" -->
+                        </div><!-- .col -->
+                    </div><!-- .container -->
+                </div><!-- .hero-content -->
+            </div><!-- .swiper-slide -->
+        </div><!-- .swiper-wrapper -->
+
+        <div class="swiper-slide" data-date="2019/05/01" style="background: url({% static 'images/estado2.jpg' %}) no-repeat">
+            <div class="hero-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col flex flex-column justify-content-center">
+                            <div class="entry-header">
+                                <div class="countdown flex align-items-center">
+                                    <div class="countdown-holder flex align-items-baseline">
+                                        <span class="dday"></span>
+                                        <label>DÍAS</label>
+                                    </div><!-- .countdown-holder -->
+
+                                    <div class="countdown-holder flex align-items-baseline">
+                                        <span class="dhour"></span>
+                                        <label>HORAS</label>
+                                    </div><!-- .countdown-holder -->
+
+                                    <div class="countdown-holder flex align-items-baseline">
+                                        <span class="dmin"></span>
+                                        <label>MINUTOS</label>
+                                    </div><!-- .countdown-holder -->
+
+                                    <div class="countdown-holder flex align-items-baseline">
+                                        <span class="dsec"></span>
+                                        <label>SEGUNDOS</label>
+                                    </div><!-- .countdown-holder -->
+                                </div><!-- .countdown -->
+
+                                <h2 class="entry-title">Jóvenes profecionales. <br>PERSIGUE TUS SUEÑOS!</h2>
+                            </div>
+                            <!--- .entry-header -->
+
+                            <div class="entry-footer">
+                                <a class="btn gradient-bg" href="#">BUSCAS TRABAJO</a>
+                            </div><!-- .entry-footer" -->
+                        </div><!-- .col -->
+                    </div><!-- .container -->
+                </div><!-- .hero-content -->
+            </div><!-- .swiper-slide -->
+        </div><!-- .swiper-wrapper -->
+
+        <div class="swiper-slide" data-date="2020/05/01" style="background: url({% static 'images/fondo4.jpg' %}) no-repeat">
+            <div class="hero-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col flex flex-column justify-content-center">
+                            <div class="entry-header">
+                                <div class="countdown flex align-items-center">
+                                    <div class="countdown-holder flex align-items-baseline">
+                                        <span class="dday"></span>
+                                        <label>DÍAS</label>
+                                    </div><!-- .countdown-holder -->
+
+                                    <div class="countdown-holder flex align-items-baseline">
+                                        <span class="dhour"></span>
+                                        <label>HORAS</label>
+                                    </div><!-- .countdown-holder -->
+
+                                    <div class="countdown-holder flex align-items-baseline">
+                                        <span class="dmin"></span>
+                                        <label>MINUTOS</label>
+                                    </div><!-- .countdown-holder -->
+
+                                    <div class="countdown-holder flex align-items-baseline">
+                                        <span class="dsec"></span>
+                                        <label>SEGUNDOS</label>
+                                    </div><!-- .countdown-holder -->
+                                </div><!-- .countdown -->
+
+                                <h2 class="entry-title">Los mejores empleos del tu campo. <br>PERSIGUE TUS SUEÑOS!</h2>
+                            </div>
+                            <!--- .entry-header -->
+
+                            <div class="entry-footer">
+                                <a class="btn gradient-bg" href="#">BUSCAS TRABAJO</a>
+                            </div><!-- .entry-footer" -->
+                        </div><!-- .col -->
+                    </div><!-- .container -->
+                </div><!-- .hero-content -->
+            </div><!-- .swiper-slide -->
+        </div><!-- .swiper-wrapper -->
+    </div>
+
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- Add Arrows -->
+    <div class="swiper-button-next flex justify-content-center align-items-center">
+        <span><svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M1171 960q0 13-10 23l-466 466q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l393-393-393-393q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l466 466q10 10 10 23z" />
+            </svg></span>
+    </div>
+
+    <div class="swiper-button-prev flex justify-content-center align-items-center">
+        <span><svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M1203 544q0 13-10 23l-393 393 393 393q10 10 10 23t-10 23l-50 50q-10 10-23 10t-23-10l-466-466q-10-10-10-23t10-23l466-466q10-10 23-10t23 10l50 50q10 10 10 23z" />
+            </svg></span>
+    </div>
+</div><!-- .swiper-container -->
+</header><!-- .site-header -->
+
+<div class="homepage-info-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-4 col-lg-5">
+                <figure>
+                    <img src="{% static 'images/logo23.png' %}" alt="logo">
+                </figure>
+            </div>
+
+            <div class="col-12 col-md-8 col-lg-7">
+                <header class="entry-header">
+                    <h2 class="entry-title">BUMERAN</h2>
+                    <h2 class="entry-title">!Miles de Empresas necesitan tu talento!</h2>
+                </header>
+
+                <div class="entry-content">
+                    <p>Somos una bolsa de trabajo la cual nos encargamos de asegurarte en unos de los mejores empleos en tu campo 
+                        con el fin de ayudarte en progresar en tu dessarrollo personal y profecional...</p>
+                </div>
+
+                <footer class="entry-footer">
+                    <a href="#" class="btn gradient-bg">Publica gratis</a>
+                    <a href="#" class="btn dark">Ingresa</a>
+                </footer>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="homepage-featured-events">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="featured-events-wrap flex flex-wrap justify-content-between">
+                    <div class="event-content-wrap positioning-event-1">
+                        <figure>
+                            <a href="#"><img src="{% static 'images/tt2.gif' %}" alt=""></a>
+                        </figure>
+
+                        <header class="entry-header">
+                            <h3 class="entry-title">TECNOLOGÍA</h3>
+
+                            
+                        </header>
+                    </div>
+
+                    <div class="event-content-wrap positioning-event-2">
+                        <figure>
+                            <a href="#"><img src="{% static 'images/conta.png' %}" alt=""></a>
+                        </figure>
+
+                        <header class="entry-header">
+                            <h3 class="entry-title">CONTADURIA</h3>
+
+                            
+                        </header>
+                    </div>
+
+                    <div class="event-content-wrap positioning-event-3">
+                        <figure>
+                            <a href="#"><img src="{% static 'images/tt5.gif' %}" alt=""></a>
+                        </figure>
+
+                        <header class="entry-header">
+                            <h3 class="entry-title">RECURSOS HUMANOS</h3>
+
+                           
+                        </header>
+                    </div>
+
+                    <div class="event-content-wrap positioning-event-4 half">
+                        <figure>
+                            <a href="#"><img src="{% static 'images/m1.gif' %}" alt=""></a>
+                        </figure>
+                    </div>
+
+                    <div class="event-content-wrap positioning-event-5 half">
+                        <figure>
+                            <a href="#"><img src="{% static 'images/m2.gif' %}" alt=""></a>
+                        </figure>
+                    </div>
+
+                    <div class="event-content-wrap positioning-event-6 half">
+                        <figure>
+                            <a href="#"><img src="{% static 'images/m4.gif' %}" alt=""></a>
+                        </figure>
+                    </div>
+
+                    <div class="event-content-wrap positioning-event-7">
+                        <figure>
+                            <a href="#"><img src="{% static 'images/tt6.gif' %}" alt="8"></a>
+                        </figure>
+
+                        <header class="entry-header">
+                            <h3 class="entry-title">DISEÑO</h3>
+
+                            
+                        </header>
+                    </div>
+
+                    <div class="event-content-wrap positioning-event-8">
+                        <figure>
+                            <a href="#"><img src="{% static 'images/tt7.gif' %}" alt="1"></a>
+                        </figure>
+
+                        <header class="entry-header">
+                            <h3 class="entry-title">COMUNICACIÓN</h3>
+
+                            
+                        </header>
+                    </div>
+
+                    <div class="event-content-wrap positioning-event-9">
+                        <figure>
+                            <a href="#"><img src="{% static 'images/tt9.gif'  %}" alt=""></a>
+                        </figure>
+
+                        <header class="entry-header">
+                            <h3 class="entry-title">ENFERMERIA</h3>
+
+                            
+                        </header>
+                    </div>
+
+                    <div class="event-content-wrap positioning-event-10 half">
+                        <figure>
+                            <a href="#"><img src="{% static 'images/' %}" alt=""></a>
+                        </figure>
+                    </div>
+
+                    <div class="event-content-wrap positioning-event-11 half">
+                        <figure>
+                            <a href="#"><img src="{% static 'images/m6.gif' %}" alt=""></a>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="homepage-next-events">
+    <div class="container">
+        <div class="row">
+            <div class="next-events-section-header">
+                <h2 class="entry-title">PAÍSES CON LA MEJOR OPORTUNIDAD</h2>
+                <p> Los mejores países del mundo para encontrar trabajo gracias a las facilidades que otorga a jóvenes extranjeros menores de 25 años para buscar trabajo mediante una Work Visa de 6 meses.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="next-event-wrap">
+                    <figure>
+                        <a href="#"><img src="{% static 'images/malo2.jpg' %}" alt="1"></a>
+
+                        <div class="event-rating">8.9</div>
+                    </figure>
+
+                    <header class="entry-header">
+                        <h3 class="entry-title">Luxemburgo</h3>
+
+                        <div class="posted-date">!Persigue tus sueños¡ </div>
+                    </header>
+
+                    <div class="entry-content">
+                        <p>Este país es considerado a nivel mundial uno de los que mejores condiciones brinda a los profesionales,
+                             por lo que además incentiva la educación en su país poniendo como meta dichos beneficios.
+                        </p>
+                    </div>
+
+                    <footer class="entry-footer">
+                        <a href="#">MAS DETALLES</a>
+                    </footer>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="next-event-wrap">
+                    <figure>
+                        <a href="#"><img src="{% static 'images/malo3.jpg' %}" alt="1"></a>
+
+                        <div class="event-rating">7.9</div>
+                    </figure>
+
+                    <header class="entry-header">
+                        <h3 class="entry-title">ESTADOS UNIDOS</h3>
+
+                        <div class="posted-date">!Persigue tus sueños¡</div>
+                    </header>
+
+                    <div class="entry-content">
+                        <p> Ganador por el criterio de mejores salarios, lo encabeza por una diferencia bastante alta de entre los demás miembros. En cuanto a la puntuación en este sólo
+                             tópico este país obtuvo una calificación de 10.0 por parte de la Organización.</p>
+                    </div>
+
+                    <footer class="entry-footer">
+                        <a href="#">MAS DETALLES</a>
+                    </footer>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="next-event-wrap">
+                    <figure>
+                        <a href="#"><img src="{% static 'images/malo4.jpg' %}" alt="1"></a>
+
+                        <div class="event-rating">9.9</div>
+                    </figure>
+
+                    <header class="entry-header">
+                        <h3 class="entry-title">SUIZA</h3>
+
+                        <div class="posted-date">!Persigue tus sueños¡</div>
+                    </header>
+
+                    <div class="entry-content">
+                        <p>s el país con mejores oportunidades laborales, su principal ventaja es que tiene 
+                            una taza muy baja de desempleo, del 8%, por debajo de la media de la OCDE que es de 16%.</p>
+                    </div>
+
+                    <footer class="entry-footer">
+                        <a href="#">MAS DETALLES</a>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="homepage-regional-events">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <header
+                    class="regional-events-heading entry-header flex flex-wrap justify-content-between align-items-center">
+                    <h2 class="entry-title">MAS PAÍSES</h2>
+
+                    <div class="select-location">
+                        <select>
+                            <option>DESTACADOS</option>
+                            <option>POPULARES</option>
+                            <option>REGULARES</option>
+                        </select>
+                    </div>
+                </header>
+
+                <div class="swiper-container homepage-regional-events-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <figure>
+                              
+
+                                <a class="event-overlay-link flex justify-content-center align-items-center"
+                                    href="#">+</a>
+                            </figure><!-- .hero-image -->
+
+                            <div class="entry-header">
+                                <h2 class="entry-title">!PERSIGUE TUS SUEÑOS¡</h2>
+                            </div>
+                            <!--- .entry-header -->
+                            <div class="entry-footer">
+    <div class="posted-date">BUMERAN</div>
+</div><!-- .entry-footer" -->
+</div><!-- .swiper-slide -->
+
+<div class="swiper-slide">
+<figure>
+    <img src="{% static 'images/ban1.png' %}" alt="">
+
+    <a class="event-overlay-link flex justify-content-center align-items-center" href="#">+</a>
+</figure><!-- .hero-image -->
+
+<div class="entry-header">
+    <h2 class="entry-title">Bélgica </h2>
+</div><!--- .entry-header -->
+
+<div class="entry-footer">
+    <div class="posted-date">se encuentra en el top de los países </span></div>
+</div><!-- .entry-footer" -->
+</div><!-- .swiper-slide -->
+
+<div class="swiper-slide">
+<figure>
+    <img src="{% static 'images/k1.png' %}" alt="">
+
+    <a class="event-overlay-link flex justify-content-center align-items-center" href="#">+</a>
+</figure><!-- .hero-image -->
+
+<div class="entry-header">
+    <h2 class="entry-title">Noruega</h2>
+</div><!--- .entry-header -->
+
+<div class="entry-footer">
+    <div class="posted-date">Tiene uno de los PIB más fuertes del mundo</div>
+</div><!-- .entry-footer" -->
+</div><!-- .swiper-slide -->
+
+<div class="swiper-slide">
+<figure>
+    <img src="{% static 'images/k3.png' %}" alt="">
+
+    <a class="event-overlay-link flex justify-content-center align-items-center" href="#">+</a>
+</figure><!-- .hero-image -->
+
+<div class="entry-header">
+    <h2 class="entry-title">Dinamarca</h2>
+</div><!--- .entry-header -->
+
+<div class="entry-footer">
+    <div class="posted-date">e país más puede ofrecer es la armonía entre la cuestión laboral y personal </div>
+</div><!-- .entry-footer" -->
+</div><!-- .swiper-slide -->
+
+<div class="swiper-slide">
+<figure>
+    <img src="{% static 'images/k5.png' %}" alt="">
+
+    <a class="event-overlay-link flex justify-content-center align-items-center" href="#">+</a>
+</figure><!-- .hero-image -->
+
+<div class="entry-header">
+    <h2 class="entry-title">Alemania</h2>
+</div><!--- .entry-header -->
+
+<div class="entry-footer">
+    <div class="posted-date">Trabajan sólo 27.8 horas a la semana</div>
+</div><!-- .entry-footer" -->
+</div><!-- .swiper-slide -->
+
+<div class="swiper-slide">
+<figure>
+    <img src="{% static 'images/k6.jpg' %}" alt="">
+
+    <a class="event-overlay-link flex justify-content-center align-items-center" href="#">+</a>
+</figure><!-- .hero-image -->
+
+<div class="entry-header">
+    <h2 class="entry-title">Suecia</h2>
+</div><!--- .entry-header -->
+
+<div class="entry-footer">
+    <div class="posted-date">Conocida por ofrecer las mejores prestaciones parentales </div>
+</div><!-- .entry-footer" -->
+</div><!-- .swiper-slide -->
+
+<div class="swiper-slide">
+<figure>
+    <img src="{% static 'images/k7.jpg' %}" alt="">
+
+    <a class="event-overlay-link flex justify-content-center align-items-center" href="#">+</a>
+</figure><!-- .hero-image -->
+
+<div class="entry-header">
+    <h2 class="entry-title">Canadá </h2>
+</div><!--- .entry-header -->
+
+<div class="entry-footer">
+    <div class="posted-date">el promedio de ingresos netos ajustados a cada familiar per cápita</div>
+</div><!-- .entry-footer" -->
+</div><!-- .swiper-slide -->
+</div><!-- .swiper-wrapper -->
+
+<!-- Add Arrows -->
+<div class="swiper-button-next flex justify-content-center align-items-center">
+<span><svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1171 960q0 13-10 23l-466 466q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l393-393-393-393q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l466 466q10 10 10 23z"/></svg></span>
+</div>
+
+<div class="swiper-button-prev flex justify-content-center align-items-center">
+<span><svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1203 544q0 13-10 23l-393 393 393 393q10 10 10 23t-10 23l-50 50q-10 10-23 10t-23-10l-466-466q-10-10-10-23t10-23l466-466q10-10 23-10t23 10l50 50q10 10 10 23z"/></svg></span>
+</div>
+</div><!-- .swiper-container -->
+
+<div class="events-partners">
+<header class="entry-header">
+<h2 class="entry-title">BUMERAN</h2>
+</header>
+
+
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="newsletter-subscribe">
+    
+<div class="container">
+<div class="row">
+<div class="col-12">
+<header class="entry-header">
+<h2 class="entry-title">SUSCRÍBETE PARA OBTENER MAS OPCIONES DE EMPLEO</h2>
+<p>!Estaremos atentos a tus solicitudes¡</p>
+</header>
+
+<div class="newsletter-form">
+<form class="flex flex-wrap justify-content-center align-items-center">
+<div class="col-md-12 col-lg-3">
+<input type="text" placeholder="Nombre">
+</div>
+
+<div class="col-md-12 col-lg-6">
+<input type="email" placeholder="Correo electronico">
+</div>
+
+<div class="col-md-12 col-lg-3">
+<input class="btn gradient-bg" type="submit" value="Subscribe">
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+ {% endblock %}

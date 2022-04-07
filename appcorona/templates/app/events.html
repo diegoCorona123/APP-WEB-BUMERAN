@@ -1,0 +1,413 @@
+{% extends "app/base.html" %}
+{% load static %}
+{% block titulo %}
+ 
+ {% endblock %}
+
+{% block contenido %}
+
+                <div class="col-lg-3 d-none d-lg-block order-2 order-lg-3">
+                    <div class="buy-tickets">
+                        <a class="btn gradient-bg" href="#">Ingresa</a>
+                    </div><!-- .buy-tickets -->
+                </div><!-- .col -->
+            </div><!-- .row -->
+        </div><!-- .container-fluid -->
+    </div><!-- .header-bar -->
+
+    <div class="page-header events-page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <header class="entry-header">
+                        <h1 class="entry-title">Empleos</h1>
+                    </header>
+                </div>
+            </div>
+        </div>
+    </div>
+</header><!-- .site-header -->
+
+<form class="events-search">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-3">
+                <input type="date" placeholder="Date">
+            </div>
+
+            <div class="col-12 col-md-3">
+                <input type="text" placeholder="Empleo">
+            </div>
+
+            <div class="col-12 col-md-3">
+                <input type="text" placeholder="Localización">
+            </div>
+
+            <div class="col-12 col-md-3">
+                <input class="btn gradient-bg" type="submit" value="Empleos">
+            </div>
+        </div>
+    </div>
+</form>
+
+<div class="container">
+    <div class="row events-list">
+        <div class="col-12 col-lg-6 single-event">
+            <figure class="events-thumbnail">
+                <a href="#"><img src="{% static 'images/logo1.png' %}" alt=""></a>
+            </figure>
+
+            <div class="event-content-wrap">
+                <header class="entry-header flex justify-content-between">
+                    <div>
+                        <h2 class="entry-title"><a href="#">Trabajos Remoto.</a></h2>
+
+                        <div class="event-location"><a href="#"> Empleados puedan ejecutar con éxito los proyectos y las tareas diarias sin necesidad de ir a una oficina todos los días.</a></div>
+
+                        <div class="event-date">Bumeran</div>
+                    </div>
+
+                    <div class="event-cost flex justify-content-center align-items-center">
+                        Puestos <span> 89</span>
+                    </div>
+                </header>
+
+                <footer class="entry-footer">
+                    <a href="#">INGRESA</a>
+                </footer>
+            </div>
+        </div>
+
+        <div class="col-12 col-lg-6 single-event">
+            <figure class="events-thumbnail">
+                <a href="#"><img src="{% static 'images/logo2.png' %}" alt=""></a>
+            </figure>
+
+            <div class="event-content-wrap">
+                <header class="entry-header flex justify-content-between">
+                    <div>
+                        <h2 class="entry-title"><a href="#">Administraciòn</a></h2>
+
+                        <div class="event-location"><a href="#">Comercialización que aplique la compañía en la que trabajes.Además, participarás en el proceso de diseño de los planes de acción en materia promocional y publicitaria</a></div>
+                        <div class="event-date">Bumeran</div>
+                    </div>
+                    <div class="event-cost flex justify-content-center align-items-center">
+                        Puestos<span> 89</span>
+                    </div>
+                </header>
+
+                
+
+                <footer class="entry-footer">
+                    <a href="#">Ingresa</a>
+                </footer>
+            </div>
+        </div>
+
+        <div class="col-10 col-lg-5 single-event">
+            <figure class="events-thumbnail">
+
+                <a href="#"><img src="{% static 'images/logo4.png' %}" alt=""></a>
+            </figure>
+
+            <div class="event-content-wrap">
+                <header class="entry-header flex justify-content-between">
+                    <div>
+                        <h2 class="entry-title"><a href="#"> Ciberseguridad</a></h2>
+
+                        <div class="event-location"><a href="#">Privacidad y protección de datos de las empresas y las organizaciones para hacer frente a los ciberataques.</a></div>  
+                    </div>
+
+                    <div class="event-cost flex justify-content-center align-items-center">
+                         Puestos <span> 40</span>
+                    </div>
+                </header>
+
+                <footer class="entry-footer">
+                    <a href="#">Ingresa</a>
+                </footer>
+            </div>
+        </div>
+        <br>
+        <div class="col-12 col-lg-6 single-event">
+            <figure class="events-thumbnail">
+                <a href="#"><img src="{% static 'images/logok.ico' %}" alt=""></a>
+            </figure>
+
+            <div class="event-content-wrap">
+                <header class="entry-header flex justify-content-between">
+                    <div>
+                        <h2 class="entry-title"><a href="#">Diseño</a></h2>
+
+                        <div class="event-location"><a href="#"> Crear y organizar tus archivos, plantillas, módulos y carpetas, al igual que hay una contribución el las pagínas web y mucho mas.</a></div>
+
+                        <div class="event-date">Bumeran</div>
+                    </div>
+
+                    <div class="event-cost flex justify-content-center align-items-center">
+                        Puestos<span> 70</span>
+                    </div>
+                </header>
+
+                
+
+                <footer class="entry-footer">
+                    <a href="#">Ingresa</a>
+                </footer>
+            </div>
+        </div>
+
+        <div class="col-12 col-lg-6 single-event">
+            <figure class="events-thumbnail">
+                <a href="#"><img src="{% static 'images/logomalo.png' %}" alt=""></a>
+            </figure>
+
+            <div class="event-content-wrap">
+                <header class="entry-header flex justify-content-between">
+                    <div>
+                        <h2 class="entry-title"><a href="#">Director de Proyectos</a></h2>
+
+                        <div class="event-location"><a href="#">Incluye la documentación, la organización de reuniones, el manejo del presupuesto del proyecto y el uso de habilidades 
+                            de gestión del tiempo para ayudar al equipo a mantenerse encaminado.</a></div>
+
+                        <div class="event-date"></div>
+                    </div>
+
+                    <div class="event-cost flex justify-content-center align-items-center">
+                        Puestos<span> 50</span>
+                    </div>
+                </header>
+
+               
+
+                <footer class="entry-footer">
+                    <a href="#">Ingresa</a>
+                </footer>
+            </div>
+        </div>
+
+        <div class="col-12 col-lg-6 single-event">
+            <figure class="events-thumbnail">
+                <a href="#"><img src="{% static 'images/logo8.png' %}" alt=""></a>
+            </figure>
+
+            <div class="event-content-wrap">
+                <header class="entry-header flex justify-content-between">
+                    <div>
+                        <h2 class="entry-title"><a href="#">Comunicaciòn</a></h2>
+
+                        <div class="event-location"><a href="#">cohesiona la organización, que constituye la argamasa que transforma a la empresa en un sistema integrado. Al mismo tiempo se muestra como una herramienta 
+                            esencial para la gestión de los recursos humanos y la implantación del cambio en las organizaciones.</a></div>
+
+                        <div class="event-date">Bumeran</div>
+                    </div>
+
+                    <div class="event-cost flex justify-content-center align-items-center">
+                        Puestos<span> 89</span>
+                    </div>
+                </header>
+                <footer class="entry-footer">
+                    <a href="#">Buy Tikets</a>
+                </footer>
+            </div>
+        </div>
+
+        <div class="col-12 col-lg-6 single-event">
+            <figure class="events-thumbnail">
+                <a href="#"><img src="{% static 'images/' %}" alt=""></a>
+            </figure>
+
+            <div class="event-content-wrap">
+                <header class="entry-header flex justify-content-between">
+                    <div>
+                        <h2 class="entry-title"><a href="#">Analista</a></h2>
+
+                        <div class="event-location"><a href="#">responsable de elaborar las proyecciones de estados financieros, pero el auxiliar lo apoya brindándole todos los datos para respaldar dicho informe. Asimismo, el auxiliar 
+                            contable es quien prepara los documentos correspondientes para sustentar toda la información contenida en el estado financiero.</a></div>
+
+                        <div class="event-date"></div>
+                    </div>
+
+                    <div class="event-cost flex justify-content-center align-items-center">
+                        Puestos<span> 60</span>
+                    </div>
+                </header>
+
+                <footer class="entry-footer">
+                    <a href="#">Ingresa</a>
+                </footer>
+            </div>
+        </div>
+
+        <div class="col-12 col-lg-6 single-event">
+            <figure class="events-thumbnail">
+                <a href="#"><img src="{% static 'images/' %}" alt=""></a>
+            </figure>
+
+            <div class="event-content-wrap">
+                <header class="entry-header flex justify-content-between">
+                    <div>
+                        <h2 class="entry-title"><a href="#">Construcciòn</a></h2>
+
+                        <div class="event-location"><a href="#">Manual de la construcción física del entorno construido y con infraestructura</a></div>
+
+                        
+                    </div>
+
+                    <div class="event-cost flex justify-content-center align-items-center">
+                        Puestos<span> 150</span>
+                    </div>
+                </header>
+
+                <div class="entry-content">
+                    <p>El campo de tabajo con mas empleos hasta el momento.</p>
+                </div>
+
+                <footer class="entry-footer">
+                    <a href="#">Ingresa</a>
+                </footer>
+            </div>
+        </div>
+        <div class="col-12 col-lg-6 single-event"></div>
+
+        <div class="col-12 col-lg-6 single-event">
+            <figure class="events-thumbnail">
+                <a href="#"><img src="{% static 'images/' %}" alt=""></a>
+            </figure>
+
+            <div class="event-content-wrap">
+                <header class="entry-header flex justify-content-between">
+                    <div>
+                        <h2 class="entry-title"><a href="#">Guardia</a></h2>
+
+                        <div class="event-location"><a href="#">agencias de seguridad privadas, cuyos servicios son contratados por terceros para la protección y
+                             salvaguardo de sus bienes (propiedades, equipos, dinero, personas). .</a></div>
+
+                        
+                    </div>
+
+                    <div class="event-cost flex justify-content-center align-items-center">
+                        Puestos <span> 97</span>
+                    </div>
+                </header>
+
+                
+
+                <footer class="entry-footer">
+                    <a href="#">Ingresa</a>
+                </footer>
+            </div>
+        </div>
+
+        <div class="col-12 col-lg-6 single-event">
+            <figure class="events-thumbnail">
+                <a href="#"><img src="{% static 'images/' %}" alt=""></a>
+            </figure>
+
+            <div class="event-content-wrap">
+                <header class="entry-header flex justify-content-between">
+                    <div>
+                        <h2 class="entry-title"><a href="#">Contaduiria</a></h2>
+
+                        <div class="event-location"><a href="#">elaborar las proyecciones de estados financieros, pero el auxiliar lo 
+                            apoya brindándole todos los datos para respaldar dicho informe.</a></div>
+
+                       
+                    </div>
+
+                    <div class="event-cost flex justify-content-center align-items-center">
+                        Puestos<span> 89</span>
+                    </div>
+                </header>
+                <footer class="entry-footer">
+                    <a href="#">Resgistrate</a>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="load-more-btn">
+                <a class="btn gradient-bg" href="#">Mas Informaciòn</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="upcoming-events-outer">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="upcoming-events">
+                    <div class="upcoming-events-header">
+                        <h4>Eventos</h4>
+                    </div>
+
+                    <div class="upcoming-events-list">
+                        <div class="upcoming-event-wrap flex flex-wrap justify-content-between align-items-center">
+                            <figure class="events-thumbnail">
+                                <a href="#"><img src="{% static 'images/bob.png' %}" alt=""></a>
+                            </figure>
+
+                            
+
+                            <header class="entry-header">
+                                <h3 class="entry-title"><a href="#">Conferiencia de Construcciòn</a></h3>
+
+                                <div class="event-date-time">Mayo 6, 2022 @ 8:00 Pm - May 19, 2022 @ 4:00 Am</div>
+
+                                <div class="event-speaker">Anfitrion: Maria Williams, Luis Smith, James Doe</div>
+                            </header>
+
+                            <footer class="entry-footer">
+                                <a href="#">Ingresa</a>
+                            </footer>
+                        </div>
+
+                        <div class="upcoming-event-wrap flex flex-wrap justify-content-between align-items-center">
+                            <figure class="events-thumbnail">
+                                <a href="#"><img src="{% static 'images/robot1.png' %}" alt=""></a>
+                            </figure>
+
+                            
+
+                            <header class="entry-header">
+                                <h3 class="entry-title"><a href="#">Conferiencia de Tecnologìa</a></h3>
+
+                                <div class="event-date-time">julio 8, 2022 @ 8:00 Pm - Julio 20, 2022 @ 4:00 Am</div>
+
+                                <div class="event-speaker">Anfitrion Ing.Maria Martines, Ing.Diego Corona</div>
+                            </header>
+
+                            <footer class="entry-footer">
+                                <a href="#">Ingresa</a>
+                            </footer>
+                        </div>
+
+                        <div class="upcoming-event-wrap flex flex-wrap justify-content-between align-items-center">
+                            <figure class="events-thumbnail">
+                                <a href="#"><img src="{% static 'images/medic.png' %}" alt=""></a>
+                            </figure>
+
+                            
+
+                            <header class="entry-header">
+                                <h3 class="entry-title"><a href="#">Conferencia de Enfermeria</a></h3>
+
+                                <div class="event-date-time">Junio 4, 20 @ 8:00 Pm - junio 29, 2018 @ 4:00 Am</div>
+
+                                <div class="event-speaker">Anfitrion:Doc. Luis, Doc.Maria morena</div>
+                            </header>
+
+                            <footer class="entry-footer">
+                                <a href="#">INGRESA</a>
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

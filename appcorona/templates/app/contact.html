@@ -1,0 +1,111 @@
+{% extends "app/base.html" %}
+{% load static %}
+{% block titulo %}
+ 
+ {% endblock %}
+
+{% block contenido %}
+
+                <div class="col-lg-3 d-none d-lg-block order-2 order-lg-3">
+                    <div class="buy-tickets">
+                        <a class="btn gradient-bg" href="/admin">ADNIM</a>
+                    </div><!-- .buy-tickets -->
+                </div><!-- .col -->
+            </div><!-- .row -->
+        </div><!-- .container-fluid -->
+    </div><!-- .header-bar -->
+
+    <div class="page-header contact-page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <header class="entry-header">
+                        <h1 class="entry-title">CONTACTOS.</h1>
+                    </header>
+                </div>
+            </div>
+        </div>
+    </div>
+</header><!-- .site-header -->
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="contact-location-details">
+                <h2 class="entry-title">New York</h2>
+
+                <div class="entry-content">
+                    <p>Contamos con 18 oficinas dentro del pais y expandiendonos.</p>
+                </div>
+
+                <footer class="entry-footer">
+                    <ul>
+                        
+                        <li class="contact-number">665 5667 8899 888</li>
+                        <li class="contact-email"><a href="#">diegoCD888@gmai.com</a></li>
+                    </ul>
+                </footer>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="contact-location-details">
+                <h2 class="entry-title">MEXICO</h2>
+
+                <div class="entry-content">
+                    <p>Actualmente Contamos con serca de 100 oficinas dentro del pais.</p>
+                </div>
+
+                <footer class="entry-footer">
+                    <ul>
+                        
+                        <li class="contact-number">447-134-09-88</li>
+                        <li class="contact-email"><a href="#">diegoCD888@gmai.com</a></li>
+                    </ul>
+                </footer>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="contact-location-details">
+                <h2 class="entry-title">Los Angeles</h2>
+
+                <div class="entry-content">
+                    <p>Contamos con serca de 54 oficinas dentro del pais y expandiendonos.</p>
+                </div>
+
+                <footer class="entry-footer">
+                    <ul>
+                        
+                        <li class="contact-number">447-134-09-88</li>
+                        <li class="contact-email"><a href="#">diegoCD888@gmai.com</a></li>
+                    </ul>
+                </footer>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="contact-page-map">
+    <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=university of san francisco&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="contact-form">
+                <form class="row">
+                   {% csrf_token %}
+                    <div class="col-12 col-md-4"><input type="text" placeholder="Nombre" name="{{from.nombre.name}}"></div>
+                    <div class="col-12 col-md-4"><input type="email" placeholder="Email" name="{{from.email.name}}"></div>
+                    <div class="col-12 col-md-4"><input type="text" placeholder="Motivo" name="{from.motivo.name}}"></div>
+                    <div class="col-12"><textarea placeholder="Comentario" name="{{form.comentarios.name}}" rows="8"></textarea></div>
+                    <div class="col-12 flex justify-content-center"><input class="btn gradient-bg" type="submit" value="Enviar Mensaje"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

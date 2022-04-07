@@ -1,0 +1,157 @@
+{% extends "app/base.html" %}
+{% load static %}
+{% block contenido %}
+
+                <div class="col-lg-3 d-none d-lg-block order-2 order-lg-3">
+                    <div class="buy-tickets">
+                        <a class="btn gradient-bg" href="#">INGRESA</a>
+                    </div><!-- .buy-tickets -->
+                </div><!-- .col -->
+            </div><!-- .row -->
+        </div><!-- .container-fluid -->
+    </div><!-- .header-bar -->
+
+    <div class="page-header single-event-page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <header class="entry-header">
+                        <h1 class="entry-title">ENTREVISTAS</h1>
+                    </header>
+                </div>
+            </div>
+        </div>
+    </div>
+</header><!-- .site-header -->
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 single-event">
+            <div class="event-content-wrap">
+                <header class="entry-header flex flex-wrap justify-content-between align-items-end">
+                    <center>
+                        <div class="single-event-heading">
+                            <h2 class="entry-title">Agende su entrevista</h2>
+
+                            <div class="event-location"><a href="#">Coloque sus datos personales correctamente..</a></div>
+
+                            <div class="event-date">Haremos lo posible por usted.</div>
+                        </div>
+                     </center>
+                    
+                </header>
+                <div>
+                    
+                        <figure class="events-thumbnail justify-content-center" >
+                            <img src="{% static 'images/entre.jpg' %}" alt="">
+                        </figure>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="tabs">
+                <ul class="tabs-nav flex">
+                    <li class="tab-nav flex justify-content-center align-items-center" data-target="#tab_details">Detalles</li>
+                    
+                    <li class="tab-nav flex justify-content-center align-items-center" data-target="#tab_organizers">Organización</li>
+                </ul>
+
+                <div class="tabs-container">
+                    <div id="tab_details" class="tab-content">
+                        <div class="flex flex-wrap justify-content-between">
+                            <div class="single-event-details">
+                                <div class="single-event-details-row">
+                                    <label>Presentarse:</label>
+                                    <p>00/00/0000</p>
+                                </div>
+
+                                <div class="single-event-details-row">
+                                    <label>Y:</label>
+                                    <p>00/00 @ 07:30 am</p>
+                                </div>
+
+                                <div class="single-event-details-row">
+                                    <label>Premiun:</label>
+                                    <p>$89 <span>$</span></p>
+                                </div>
+
+                                <div class="single-event-details-row">
+                                    <label>Puesto:</label>
+                                    <p>..</p>
+                                </div>
+
+                                <div class="single-event-details-row">
+                                    <label>Direccion:</label>
+                                    <p><a href="#">Estado/Pais</a>, <a href="#">Municipio</a>, <a href="#">Calle/Numero</a></p>
+                                </div>
+                            </div>
+
+                            <div class="single-event-map">
+                                <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=university of san francisco&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                  
+
+                    <div id="tab_organizers" class="tab-content">
+                        <p>En la pestaña anterior se mostrara la entrevista agendada con todos los datos colocado anteriormente, Contamos con avisos de pago o gratis 
+                            esto va depender de que tanto estaremos al pendiente de su entrevisa le comunicaremos lo mas pronto nos sea posible un cordial saludo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="event-tickets">
+                <div class="ticket-row flex flex-wrap justify-content-between align-items-center">
+                    <div class="ticket-type flex justify-content-between align-items-center">
+                        <h3 class="entry-title"><span>Aviso Destacado.</span></h3>
+
+                        <div class="ticket-price">$1,043</div>
+                    </div>
+
+                    
+
+                    <input type="submit" class="btn gradient-bg" value="COMPRAR">
+                </div>
+
+                <div class="ticket-row flex flex-wrap justify-content-between align-items-center">
+                    <div class="ticket-type flex justify-content-between align-items-center">
+                        <h3 class="entry-title"><span>Promo 3 avisos simples</span></h3>
+
+                        <div class="ticket-price">$1,699</div>
+                    </div>
+
+                    
+
+                    <input type="submit" class="btn gradient-bg" value="COMPRAR">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="row">
+        <div class="col-12">
+            <div class="upcoming-events">
+                <div class="upcoming-events-header">
+                    <div class="buy-tickets flex justify-content-center align-items-center">
+                        <a class="btn gradient-bg" href="#">AGENDAR</a>
+                    </div>
+                </div>
+
+                
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
