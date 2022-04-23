@@ -31,9 +31,11 @@
                     <div class="site-branding">
                         <div class="site-title">
                             <a href="#"><img src="{% static 'images/logo23.png' %}"alt="logo"></a>
+                           
                         </div><!-- .site-title -->
                     </div><!-- .site-branding -->
                 </div><!-- .col -->
+                
 
                 <div class="col-2 col-lg-7 order-3 order-lg-2">
                     <nav class="site-navigation">
@@ -43,24 +45,41 @@
                             <span></span>
                             <span></span>
                         </div><!-- .hamburger-menu -->
+                        
 
                         <ul>
+                            
                             <li><a href="{% url 'Inicio' %}">INICIO</a></li>
                             <li><a href="{% url 'Elementos' %}">ELEMENTOS</a></li>
                             <li><a href="{% url 'Eventos' %}">Empleos</a></li>
                             <li><a href="{% url 'Single' %}">ENTREVISTA</a></li>
                             <li><a href="{% url 'Contactos' %}">CONTACTOS</a></li>
+                            {% if user.is_authenticated %}
+                            <li><a href="{% url 'logout' %}">LOGOUT</a></li>
+                            {% else %}
+                            <li><a href="{% url 'login' %}">LOGIN</a></li>
+                            {% endif %}
+                            
                         </ul>
+                        
                     </nav><!-- .site-navigation -->
+                   
+
+                   
+                    
+                    
                 </div>
+            
                 
 
-
+              
 <!--########################################################################################################
 ############################################################################################################################
 ################################################################################################-->
 
 {% block contenido %}
+
+
 
 
 {% endblock %}

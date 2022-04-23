@@ -6,26 +6,33 @@
 
 <div class="col-lg-3 d-none d-lg-block order-2 order-lg-3">
     <div class="buy-tickets">
-        
-        <div class="buscador">
-            <h2>
-              Busqueda
-            </h2>
-                <from action ="/buscar/" method="get">
-                    <div class="buscador">
-                        <label for="name"> Buscar <span>*</span></label>
-                        <input type="text" name="busqueda" id="busqueda" value="" size="18">
-                        <p><input type="Submit" values="Submit Form"></p>
-                     </div>
-                </from>
+        <center>
+        <div class="contact-rom">
+            <a class="contact-page-header" href="#" >
+                <h2 style="color: cornsilk;">Busqueda</h2>
+                <div class="row">
+                    <center>
+                        <form  class="" action="/buscar/" method="get">
+                                <div class=""></div>
+                                    <input type="text"  id="busqueda" placeholder="¡Busca aquí!" name="busqueda" required="required" size="37">
+                                </div>
+                                <br>
+                                <div class=""></div>
+                                    <button class="btn" type="submit" value="Submit Form">Buscar</button>
+                                </div>
+                                &nbsp;
+                                <br>
+                        </form>
+                    </center>
+                </div>
+            </a>
         </div>
-           
-            
+        </center>   
     </div><!-- .buy-tickets -->
 </div><!-- .col -->
 </div><!-- .row -->
-</div><!-- .container-fluid -->
-</div><!-- .header-bar -->
+
+
 
 <div class="swiper-container hero-slider">
     <div class="swiper-wrapper">
@@ -58,11 +65,13 @@
                                 </div><!-- .countdown -->
 
                                 <h2 class="entry-title">Busca el tabajo adecuando. <br>PERSIGUE TUS SUEÑOS!</h2>
+                                
                             </div>
                             <!--- .entry-header -->
+                            
 
                             <div class="entry-footer">
-                                <a class="btn gradient-bg" href="#">BUSCAS TRABAJO</a>
+                                <a class="btn gradient-bg" href="{% url 'Elementos' %}">BUSCAS TRABAJO</a>
                             </div><!-- .entry-footer" -->
                         </div><!-- .col -->
                     </div><!-- .container -->
@@ -103,7 +112,7 @@
                             <!--- .entry-header -->
 
                             <div class="entry-footer">
-                                <a class="btn gradient-bg" href="#">BUSCAS TRABAJO</a>
+                                <a class="btn gradient-bg" href="{% url 'Elementos' %}">BUSCAS TRABAJO</a>
                             </div><!-- .entry-footer" -->
                         </div><!-- .col -->
                     </div><!-- .container -->
@@ -144,7 +153,7 @@
                             <!--- .entry-header -->
 
                             <div class="entry-footer">
-                                <a class="btn gradient-bg" href="#">BUSCAS TRABAJO</a>
+                                <a class="btn gradient-bg" href="{% url 'Elementos' %}">BUSCAS TRABAJO</a>
                             </div><!-- .entry-footer" -->
                         </div><!-- .col -->
                     </div><!-- .container -->
@@ -173,6 +182,8 @@
 </div><!-- .swiper-container -->
 </header><!-- .site-header -->
 
+
+
 <div class="homepage-info-section">
     <div class="container">
         <div class="row">
@@ -194,13 +205,16 @@
                 </div>
 
                 <footer class="entry-footer">
-                    <a href="#" class="btn gradient-bg">Publica gratis</a>
-                    <a href="#" class="btn dark">Ingresa</a>
+                    <a href="{% url 'Contactos' %}" class="btn gradient-bg">Contactanos</a>
+                    <a href="{% url 'login' %}" class="btn dark">Ingresa</a>
+                    
                 </footer>
+                
             </div>
         </div>
     </div>
 </div>
+
 
 <div class="homepage-featured-events">
     <div class="container">
@@ -568,18 +582,13 @@
 <p>!Estaremos atentos a tus solicitudes¡</p>
 </header>
 
-<div class="newsletter-form">
-<form class="flex flex-wrap justify-content-center align-items-center">
-<div class="col-md-12 col-lg-3">
-<input type="text" placeholder="Nombre">
-</div>
 
-<div class="col-md-12 col-lg-6">
-<input type="email" placeholder="Correo electronico">
-</div>
+                <div class=" contact-location-details">
+                <center>
+                    <a class="btn gradient-bg" href="{% url 'registro' %}" type="submit">Resgistrate</a>
+                </center>
+                </div>
 
-<div class="col-md-12 col-lg-3">
-<input class="btn gradient-bg" type="submit" value="Subscribe">
 </div>
 </form>
 </div>

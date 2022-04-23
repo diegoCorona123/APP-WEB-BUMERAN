@@ -1,10 +1,9 @@
 from django.contrib import admin
-from .models import empleo 
-from .models import Comentarios
+from .models import empleo, Comentarios
+
 
 
 # Register your models here.
-
 
 
 class empleotAdmin(admin.ModelAdmin):
@@ -15,6 +14,8 @@ class empleotAdmin(admin.ModelAdmin):
     list_per_page = 3
 
 admin.site.register(empleo, empleotAdmin)
-
 admin.site.register(Comentarios)
+
+
+
 

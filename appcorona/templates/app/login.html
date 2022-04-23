@@ -1,0 +1,77 @@
+{% extends "app/base.html" %}
+{% load static %}
+{% block titulo %}
+ 
+ {% endblock %}
+
+{% block contenido %}
+<div class="col-lg-3 d-none d-lg-block order-2 order-lg-3">
+    
+</div><!-- .col -->
+</div><!-- .row -->
+</div><!-- .container-fluid -->
+</div><!-- .header-bar -->
+
+<div class="page-header events-page-header">
+<div class="container">
+<div class="row">
+<div class="col-12">
+    <header class="entry-header">
+        <h1 class="entry-title">Usuarios</h1>
+    </header>
+</div>
+</div>
+</div>
+</div>
+</header><!-- .site-header -->
+<div class="container">
+    
+    <div class="contact-location-details">
+        <div class="col-md-12 ">
+            <h2 class="entry-title">Login Usuarios</h2>
+            <form  method="POST">
+                {% csrf_token %}
+                {% if form.errors %}
+                    <div class="alert alert-danger alert-dismissible" role="alert">
+                        <div id="form_errors">
+                            {% for key, value in form.errors.items %}
+                                <strong>{{ value }}</strong>
+                            {% endfor %}
+                        </div>
+                        <button type="button" class="Close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                {% endif %}
+                
+                <div class="btn">
+                    <label for="username">Username</label>
+                    {{ form.username }}
+                </div>
+                <div class="btn">
+                    <label for="password">Password</label>
+                    {{ form.password }}
+                </div>
+                <div class="">
+                    <label for="remember_me">Remember me</label>
+                    {{ form.remember_me }}
+                </div>
+
+                <div class="btn">
+                    <p><input name="submit" type="submit" value="Log in"></p>
+                    
+                </div>
+                <div class="btn">
+                    
+                    <p><input name="reset" type="reset" value="Reset Form"></p>
+                </div>
+                <div class="block center">
+                    <p>!No tienes una cuenta registrate <a href="{% url 'registro' %}">Aquí</p>
+                </div>
+            </form>  
+            <div class="clear"></div>
+        </div>
+    </div>
+
+</div>
+{% endblock %}

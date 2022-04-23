@@ -4,7 +4,7 @@ import datetime
 
 class empleo(models.Model):
     
-    titulo= models.CharField(max_length=100, blank=False, null=False)
+    titulo = models.CharField(max_length=100, blank=False, null=False)
     fecha_creacion = models.DateField(default=datetime.date.today, blank=False, null=False)
     disponible= models.BooleanField(default=True)
     descripcion= models.TextField( blank=False, null= False)
@@ -25,15 +25,11 @@ class empleo(models.Model):
 class Comentarios(models.Model):
     nombre = models.CharField(max_length=100, blank=False, null=False)
     email = models.EmailField(max_length=150, blank=False, null=False)
-    motivo = models.TextField(max_length=100, blank=False, null=False)
-    comentario = models.TextField(blank=False, null=False)
-
-    class Meta:
-        verbose_name = ("comment")
-        verbose_name_plural = ("comments")
+    motivo = models.CharField(max_length=100, blank=False, null=False)
+    comentario = models.CharField(max_length=150, blank=False, null=False)
 
     def __str__(self):
-        return self.Comentarios
+        return self.nombre
         
    
 # Create your models here.

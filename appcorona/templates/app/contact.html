@@ -90,22 +90,57 @@
     <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=university of san francisco&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
 </div>
 
+
+
 <div class="container">
     <div class="row">
         <div class="col-12">
             <div class="contact-form">
-                <form class="row">
-                   {% csrf_token %}
-                    <div class="col-12 col-md-4"><input type="text" placeholder="Nombre" name="{{from.nombre.name}}"></div>
-                    <div class="col-12 col-md-4"><input type="email" placeholder="Email" name="{{from.email.name}}"></div>
-                    <div class="col-12 col-md-4"><input type="text" placeholder="Motivo" name="{from.motivo.name}}"></div>
-                    <div class="col-12"><textarea placeholder="Comentario" name="{{form.comentarios.name}}" rows="8"></textarea></div>
-                    <div class="col-12 flex justify-content-center"><input class="btn gradient-bg" type="submit" value="Enviar Mensaje"></div>
+                <h2 class="entry-title">Comentarios</h2>
+                <form action=""  method="post">
+                    {% csrf_token %}
+                    <div class="col-12 col-md-4">
+                        <label form="nombre">Nombre</label>
+                        <input type="text" placeholder="name" name="{{ form.nombre.name}}"></div>
+                    <div class="col-12 col-md-4">
+                        <label form="email">Correo Electronico</label>
+                        <input type="email" placeholder="email" name="{{ form.email.name}}"></div>
+                    <div class="col-12 ">
+                        <label form="comentario">Comentario</label>
+                        <textarea  type="text" placeholder="comentario" name="{{ form.comentario.name}}"></textarea>
+                    </div>
+                    
+                    <div>
+                        &nbsp;
+                        <input  name="submit" type="submit" value="Enviar">
+                        &nbsp;
+                        <input  name="reset" type="reset" value="Borrar">
+                    </div>
                 </form>
             </div>
         </div>
     </div>
 </div>
+<!--<form action="" method="post">
+          
+    {% csrf_token %}
+    {{ form  }}
+    {% comment %} <div class="contact-form">
+      <input type="text" class="md-1" required name="{{ form.nombre.name }}"
+    </div>
+    <div class="btn">
+      <input type="text" class="md-1" name="{{ form.email.name }}"
+    </div>
+    <div class="col-md-6">
+      <input type="text" class="md-1" name="{{ form.comentario.name }}"
+    </div> {% endcomment %}
+
+    <div>
+      <input name="submit" type="submit" value="Submit Form">
+      &nbsp;
+      <input name="reset" type="reset" value="Reset Form">
+    </div>
+  </form>-->
 
 
 {% endblock %}

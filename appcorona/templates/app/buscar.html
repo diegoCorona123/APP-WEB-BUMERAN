@@ -1,0 +1,49 @@
+{% extends "app/base.html" %}
+{% load static %}
+{% block contenido %}  
+<div class="col-lg-3 d-none d-lg-block order-2 order-lg-3">
+    <div class="buy-tickets">
+        <a class="btn gradient-bg" href="/admin">ADNIM</a>
+    </div><!-- .buy-tickets -->
+</div><!-- .col -->
+</div><!-- .row -->
+</div><!-- .container-fluid -->
+</div><!-- .header-bar -->
+
+<div class="page-header contact-page-header">
+<div class="container">
+<div class="row">
+<div class="col-12">
+    <header class="entry-header">
+        <h1 class="entry-title">BÚSQUEDA</h1>
+    </header>
+</div>
+</div>
+</div>
+</div>
+</header><!-- .site-header -->
+<br>
+<br>
+
+<div class="container">
+    <div class="event-tickets">
+        {% for empleo in empleos %}
+
+        <div class="col-12 col-lg-6 single-event">
+            <header class="entry-header flex justify-content-between">
+                <div>
+                    <h4 style="color:blue;">{{ empleo.titulo }}</h4>
+                    <P>{{ empleo.empresa }}</P>
+                    <P>{{ empleo.fecha }}</P>
+                    <img src="{{ empleo.imagen.url }}" alt="No sabes">
+                    <section>
+                        <pre style="height: 300px; overflow-y: auto;">{{ empleo.descripcion }}</pre>
+                        <br>
+                    </section>
+                </div>
+            </header>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
